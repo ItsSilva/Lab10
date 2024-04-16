@@ -64,7 +64,8 @@ const render = async () => {
 
     const productPrice2 = document.createElement("p"); //product-price
     productPrice2.classList.add("product-price");
-    productPrice2.textContent = "$" + respuesta.price;
+    const precioConDescuento = respuesta.price - (respuesta.price * (respuesta.category.discount / 100));
+    productPrice2.textContent = "$" + precioConDescuento;
 
     const offInfo = document.createElement("div"); //off-info
     offInfo.classList.add("off-info");
@@ -81,17 +82,6 @@ const render = async () => {
     productContent.appendChild(productImg);
     product.appendChild(productContent);
 
-    btnBuySpan.appendChild(btnBuyIcon);
-    btnBuy.appendChild(btnBuySpan);
-    productBtns.appendChild(btnBuy);
-
-    btnCartSpan.appendChild(btnCartIcon);
-    btnCart.appendChild(btnCartSpan);
-    productBtns.appendChild(btnCart);
-
-    product.appendChild(productBtns);
-    productItems.appendChild(product);
-
     product.appendChild(productInfo);
     productInfo.appendChild(productInfoTop);
 
@@ -107,6 +97,17 @@ const render = async () => {
     productInfo.appendChild(offInfo);
 
     offInfo.appendChild(smTittle);
+
+    btnBuySpan.appendChild(btnBuyIcon);
+    btnBuy.appendChild(btnBuySpan);
+    productBtns.appendChild(btnBuy);
+
+    btnCartSpan.appendChild(btnCartIcon);
+    btnCart.appendChild(btnCartSpan);
+    productBtns.appendChild(btnCart);
+
+    product.appendChild(productBtns);
+    productItems.appendChild(product);
   }
 };
 
