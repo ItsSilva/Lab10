@@ -12,7 +12,8 @@
             "name": "Miscellaneous",
             "image": "https://i.imgur.com/BG8J0Fj.jpg",
             "creationAt": "2024-04-12T17:10:18.000Z",
-            "updatedAt": "2024-04-12T17:10:18.000Z"
+            "updatedAt": "2024-04-12T17:10:18.000Z",
+            "discount": "25"
         }
     },
     {
@@ -28,7 +29,8 @@
             "name": "Miscellaneous",
             "image": "https://i.imgur.com/BG8J0Fj.jpg",
             "creationAt": "2024-04-12T17:10:18.000Z",
-            "updatedAt": "2024-04-12T17:10:18.000Z"
+            "updatedAt": "2024-04-12T17:10:18.000Z",
+            "discount": "25%"
         }
     }
 ]
