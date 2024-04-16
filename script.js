@@ -108,7 +108,14 @@ const render = async () => {
 
     product.appendChild(productBtns);
     productItems.appendChild(product);
-  }
-};
+
+btnCart.addEventListener('click', () => {
+  const cartCountElement = document.getElementById('num');
+  let currentCount = parseInt(cartCountElement.textContent);
+  cartCountElement.textContent = currentCount + 1;
+  console.log('Item added to cart: ' + respuesta.category.name);
+});
+//Ley de vida: Si funciona, no lo toques.
+}};
 
 document.addEventListener("DOMContentLoaded", render);

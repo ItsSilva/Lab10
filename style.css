@@ -47,6 +47,9 @@ body{
     transform: .3s;
 }
 #cart{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.625rem;
     border: none;
     background: red;
     padding: 12px 30px;
